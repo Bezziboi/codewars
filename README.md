@@ -111,6 +111,30 @@ SELECT id, name FROM departments d
 
 <h1 align="center">7kyu</h1>
 
+<h3>SQL Basics: Simple JOIN</h3>
+
+For this challenge you need to create a simple SELECT statement that will return all columns from the ```products``` table, and join to the ```companies``` table so that you can return the company name.
+
+** products table schema **
+- id
+- name
+- isbn
+- company_id
+- price
+
+** companies table schema **
+- id
+- name
+
+You should return all product fields as well as the company name as "```company_name```".
+
+```sql
+SELECT p.*, c.name AS company_name
+  FROM products p
+    LEFT JOIN companies c
+      ON p.company_id = c.id
+```
+
 <h3>Best-Selling Books (SQL for Beginners #5)</h3>
 
 You work at a book store. It's the end of the month, and you need to find out the 5 bestselling books at your store. Use a select statement to list names, authors, and number of copies sold of the 5 books which were sold most.
