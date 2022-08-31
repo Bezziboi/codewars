@@ -656,6 +656,24 @@ function moveZeros(arr){
 
 <h1 align="center">6kyu</h1>
 
+<h3>Sum of Digits / Digital Root</h3>
+
+Digital root is the recursive sum of all the digits in a number.
+
+Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+Examples
+```
+    16  -->  1 + 6 = 7
+   942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+```
+
+```js
+//mySolution
+const digitalRoot = n => (n - 1) % 9 + 1;
+```
 <h3>Persistent Bugger</h3>
 
 Write a function, ```persistence```, that takes in a positive parameter ```num``` and returns its multiplicative persistence, which is the number of times you must multiply the digits in ```num``` until you reach a single digit.
