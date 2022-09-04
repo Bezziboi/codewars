@@ -109,7 +109,36 @@ SELECT id, name FROM departments d
   WHERE s.department_id = d.id AND s.price > 98.00);
 ```
 
+
+
+
+
+
+
 <h1 align="center">7kyu</h1>
+
+<h3>SQL Basics: Simple JOIN with COUNT</h3>
+
+For this challenge you need to create a simple SELECT statement that will return all columns from the people table, and join to the toys table so that you can return the COUNT of the toys
+
+** people table schema **
+- id
+- name
+** toys table schema **
+- id
+- name
+- people_id
+
+You should return all people fields as well as the toy count as "toy_count".
+```sql
+SELECT
+    p.*, 
+    COUNT(t.name) AS toy_count      
+FROM people p 
+INNER JOIN toys t
+  ON p.id = t.people_id
+GROUP BY p.id;
+```
 
 <h3>SQL Basics: Simple JOIN</h3>
 
