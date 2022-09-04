@@ -119,7 +119,7 @@ SELECT id, name FROM departments d
 
 <h3>SQL Basics: Simple JOIN with COUNT</h3>
 
-For this challenge you need to create a simple SELECT statement that will return all columns from the people table, and join to the toys table so that you can return the COUNT of the toys
+For this challenge you need to create a simple SELECT statement that will return all columns from the ```people``` table, and join to the ```toys``` table so that you can return the COUNT of the toys
 
 ** people table schema **
 - id
@@ -129,7 +129,8 @@ For this challenge you need to create a simple SELECT statement that will return
 - name
 - people_id
 
-You should return all people fields as well as the toy count as "toy_count".
+You should return all people fields as well as the toy count as "```toy_count```".
+	
 ```sql
 SELECT
     p.*, 
@@ -278,6 +279,11 @@ ORDER BY
 LIMIT 6
 ```
 
+	
+	
+	
+	
+	
 <h1 align="center">8kyu</h1>
 
 <h3>Grasshopper - Terminal game move function</h3>
@@ -376,6 +382,11 @@ function removeZeros(array){
 }
 ```
 
+	
+	
+	
+	
+	
 	
 <h1 align="center">5kyu</h1>
 
@@ -707,7 +718,38 @@ function moveZeros(arr){
 }
 ```
 
+
+
+
+
 <h1 align="center">6kyu</h1>
+
+<h3>Stop gninnipS My sdroW!</h3>
+
+Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
+
+Examples:
+```
+spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" 
+spinWords( "This is a test") => returns "This is a test" 
+spinWords( "This is another test" )=> returns "This is rehtona test"
+```
+
+```js
+//mySolution
+function spinWords(string){
+  string = string.split(' ');
+  
+  for(let i in string){
+    if(string[i].length >= 5){
+      string[i] = string[i].split('')
+      string[i] = string[i].reverse()
+      string[i] = string[i].join('')
+    }
+  }
+  return string.join(' ')
+}
+```
 
 <h3>Sum of Digits / Digital Root</h3>
 
