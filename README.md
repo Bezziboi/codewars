@@ -10,7 +10,26 @@
 <summary><h2><samp>SQL</samp></h2></summary>
 
 <h1 align="center">6kyu</h1>
+	
+<h3>
+SQL Basics: Simple PIVOTING data WITHOUT CROSSTAB</h3>
+	
+You need to build a pivot table WITHOUT using CROSSTAB function. Having two tables ```products``` and ```details``` you need to select a pivot table of products with counts of details occurrences (possible details values are ```['good', 'ok', 'bad']```.
 
+Results should be ordered by product's ```name```.
+
+Model schema for the kata is:
+
+![81Ww3YH](https://user-images.githubusercontent.com/106346771/189485932-7553ce40-c6f9-4a19-a1b1-14774e4210ae.png)
+
+
+your query should return table with next columns
+
+- name
+- good
+- ok
+- bad
+	
 <h3>SQL Bug Fixing: Fix the QUERY - Totaling</h3>
 
 Oh no! Timmys been moved into the database divison of his software company but as we know Timmy loves making mistakes. Help Timmy keep his job by fixing his query...
