@@ -724,6 +724,40 @@ function moveZeros(arr){
 
 <h1 align="center">6kyu</h1>
 
+<h3>Find the missing letter</h3>
+
+Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
+
+You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.
+The array will always contain letters in only one case.
+
+Example:
+
+['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
+```js
+["a","b","c","d","f"] -> "e"
+["O","Q","R","S"] -> "P"
+```
+
+```js
+//mySolution
+const findMissingLetter = (array) =>{
+  
+  for (let i = 1; i < array.length; i++){
+    
+    const prev = array[i - 1].charCodeAt();
+    const current = array[i].charCodeAt();
+    
+    if (current - prev !== 1){  
+      return String.fromCharCode(prev + 1);
+    }
+  }
+  
+  return null; // if nothing is found
+}
+```
+(Use the English alphabet with 26 letters!)
+
 <h3>Stop gninnipS My sdroW!</h3>
 
 Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.
