@@ -305,6 +305,29 @@ LIMIT 6
 	
 <h1 align="center">8kyu</h1>
 
+<h3>Easy SQL: Convert to Hexadecimal</h3>
+
+to hexYou have access to a table of monsters as follows:
+
+** monsters table schema **
+- id
+- name
+- legs
+- arms
+- characteristics
+
+Your task is to turn the numeric columns (```arms```, ```legs```) into equivalent hexadecimal values.
+
+** output table schema **
+- legs
+- arms
+
+```sql
+SELECT to_hex(legs) as legs,
+       to_hex(arms) as arms
+FROM monsters;
+```
+
 <h3>Grasshopper - Terminal game move function</h3>
 
 Terminal game move function
