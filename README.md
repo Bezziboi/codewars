@@ -305,6 +305,20 @@ LIMIT 6
 	
 <h1 align="center">8kyu</h1>
 
+<h3>Easy SQL - Ordering</h3>
+	
+Your task is to sort the information in the provided table 'companies' by number of employees (high to low). Returned table should be in the same format as provided:
+
+** companies table schema **
+- id
+- ceo
+- motto
+- employees
+
+```sql
+SELECT * FROM companies ORDER BY employees DESC;
+```
+
 <h3>Easy SQL: Convert to Hexadecimal</h3>
 
 to hexYou have access to a table of monsters as follows:
