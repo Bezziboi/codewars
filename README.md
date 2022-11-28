@@ -1488,6 +1488,25 @@ let isSquare = function(n){
 
 <h1 align="center">8kyu</h1>
 
+<h3>Calculate average</h3>
+
+Write a function which calculates the average of the numbers in a given list.
+
+Note: Empty arrays should return 0.
+
+```js
+function find_average(array) {
+  if (array.length === 0) {
+  return 0;
+  }
+  var result = 0;
+  for (i=0; i<array.length; i++) {
+    result +=array[i];
+  }
+  return result/array.length;
+}
+```
+
 <h3>Is n divisible by x and y?</h3>
 
 Create a function that checks if a number ```n``` is divisible by two numbers ```x``` AND ```y```. All inputs are positive, non-zero numbers.
