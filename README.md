@@ -305,6 +305,27 @@ LIMIT 6
 	
 <h1 align="center">8kyu</h1>
 
+<h3>Grasshopper - Messi goals function</h3>
+
+Messi is a soccer player with goals in three leagues:
+
+LaLiga
+Copa del Rey
+Champions
+Complete the function to return his total number of goals in all three leagues.
+
+Note: the input will always be valid.
+
+For example:
+
+```
+5, 10, 2  -->  17
+```
+
+```sql
+SELECT (la_liga_goals + copa_del_rey_goals + champions_league_Goals) as res
+  FROM goals;
+```
 <h3>Easy SQL - Ordering</h3>
 	
 Your task is to sort the information in the provided table 'companies' by number of employees (high to low). Returned table should be in the same format as provided:
